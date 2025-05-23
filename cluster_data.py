@@ -22,6 +22,13 @@ Redistribution and use in source and binary forms, with or without modification,
 Disclaimer
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Modifications made by Jiaming Chang:
+Below is a conprehensive, updating list of modifications made by Jiaming Chang, logged with dates.
+2025/05/23:
+changed import package: 
+    deleted:
+        import gsw
 """
 
 import numpy as np
@@ -31,7 +38,8 @@ from datetime import datetime
 
 # Import the Thermodynamic Equation of Seawater 2010 (TEOS-10) from GSW
 # For converting from depth to pressure
-import gsw
+# Will not be needed as the .nc file has converted depth
+# import gsw
 
 # For custom analysis functions
 import analysis_helper_functions as ahf
@@ -50,6 +58,8 @@ gattrs_to_print =  ['Last clustered',
 dfs0 = ahf.Data_Filters()
 
 ## Reproducing figures from Timmermans et al. 2008
+# load from netcdfs/ITP_2.nc file
+# load 
 ITP2_clstr_dict = {'netcdf_to_load':'netcdfs/ITP_2.nc',
                    'sources_dict':{'ITP_2':'all'},
                    'data_filters':dfs0,
@@ -68,10 +78,11 @@ ITP3_clstr_dict = {'netcdf_to_load':'netcdfs/ITP_3.nc',
                    'cl_y_var':'la_CT',
                    'm_pts':580
                    }
-
+# for those two previous paper and their datasets:
 for clstr_dict in [ITP2_clstr_dict, ITP3_clstr_dict]:
     # Find the netcdf to use
     my_nc = clstr_dict['netcdf_to_load']
+    # print the netCDF file used
     print('Reading',my_nc)
     # Load in with xarray
     xarrs, var_attr_dicts = ahf.list_xarrays(clstr_dict['sources_dict'])

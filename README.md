@@ -3,6 +3,14 @@
 Written by Mikhail Schee for:
 Mikhail Schee, Erica Rosenblum, Jonathan M. Lilly, and Nicolas Grisouard (2024) "Unsupervised Clustering Identifies Thermohaline Staircases in the Canada Basin of the Arctic Ocean," Environmental Data Science, 3:e13, 1-19, doi:[10.1017/eds.2024.13](https://doi.org/10.1017/eds.2024.13)
 
+## Modifications by Jiaming Chang
+
+This project is based on the original work from Mikhail Schee, available at [\[GitHub URL\]](https://github.com/scheemik/Staircase_Clustering_Detection_Algorithm).
+
+Modifications have been made by [Your Name] on [Date(s)] to [briefly describe the nature of the changes, e.g., "optimize performance," "add new features," etc.].
+
+These modifications are distributed under the same license terms as the original project.
+
 ## License
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

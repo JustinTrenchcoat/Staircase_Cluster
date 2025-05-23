@@ -15,6 +15,12 @@ Disclaimer
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+Modifications made by Jiaming Chang:
+Below is a conprehensive, updating list of modifications made by Jiaming Chang, logged with dates.
+2025/05/23:
+changed import package: 
+    import dill as pl changed to 
+    import pickle as pk
 """
 
 import numpy as np
@@ -25,7 +31,8 @@ from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 # For getting different marker styles
 from matplotlib.markers import MarkerStyle as mplms
 # For storing figure objects in files (can use `pickle` instead if need be)
-import dill as pl
+# import dill as pl changed to import pickle
+import pickle as pk
 # For formatting data into dataframes
 import pandas as pd
 # For matching regular expressions
