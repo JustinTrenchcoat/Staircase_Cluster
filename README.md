@@ -7,7 +7,7 @@ Mikhail Schee, Erica Rosenblum, Jonathan M. Lilly, and Nicolas Grisouard (2024) 
 
 This project is based on the original work from Mikhail Schee, available at [\[GitHub URL\]](https://github.com/scheemik/Staircase_Clustering_Detection_Algorithm).
 
-Modifications have been made by [Your Name] on [Date(s)] to [briefly describe the nature of the changes, e.g., "optimize performance," "add new features," etc.].
+Modifications have been made by Jiaming Chang from May 2025 to August 2025 to better accommodate the data strucure that the project is using.
 
 These modifications are distributed under the same license terms as the original project.
 
